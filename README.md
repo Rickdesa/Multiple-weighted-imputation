@@ -6,11 +6,17 @@ The role of all variables must be specified with column indexes.
 # Reproducible Example (please load the functions below before using)
 
 set.seed(1234)
+
 y <- rnorm(25)
+
 x <- rnorm(25)
+
 z <- rnorm(25,0.5)
+
 v <- runif(25)
+
 x[sample(1:25,3)] <- NA
+
 dat.frame <- data.frame(y,x,z,v)
 
 pmm_imputation(ampdf = dat.frame,
